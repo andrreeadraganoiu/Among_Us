@@ -1,0 +1,39 @@
+Draganoiu Andreea 312CD
+Tema4 - Among us
+
+link : https://ocw.cs.pub.ro/courses/programare/teme_2020/tema4_2020_cbd
+
+Task1 - Am folosit functia sprinf pentru a converti la string si am concatenat
+indicii matricei.
+
+Task2 - Am despartit elementele sirului cu strtok iar apoi am facut suma.
+
+Task3 - Am pus inputul de tip void intr-un pointer int pentru a face 
+mai usor operatiile. In functie de caz am facut swap intre elemente.
+
+Task4 - Am alocat campurile structurilor Player si Game.
+
+Task5 - 1. ReadPlayer() - Citesc campurile structurii Player. Am creat functia
+inversa celei predefinite : fromStringtoEnum() cu ajutorul careia transform 
+stringul citit in tipul cerut enum.
+	2. ReadGame() - Citesc campurile jocului. Apelez pentru fiecare jucator
+si pentru impostor functia de mai sus.
+
+Task6 - Atat cu WritePlayer() cat si cu WriteGame() scriu datele in
+fisierul de output.
+
+Task7 - Determin care jucator are distanta minima dintre el si impostor. Initial 
+consider ca primul jucator are distanta cea mai mica dintre el si impostor, prin 
+urmare el este cel ucis in cazul in care distanta lui este <= killRange, ceea
+ce verific atunci cand afisez. Pentru task8 cand se apeleaza repetat functia
+am considerat si cazul in care jucatorul cu distanta cea mai mica este omorat, 
+deci va fi inlocuit de un jucator alive. Dupa afisare daca impostorul si-a
+gasit o victima voi face Killed->alive = 0, fiind in acelasi timp si 
+Crewmate->alive = 0 pentru ca sunt pointeri.
+
+Task8 - Calculez urmatoarea pozitie a jucatorului, daca indicele locatiei
+se afla deja pe ultima pozitie atunci pozitia va fi prima. Acelasi lucru pentru
+impostor. Afisez restul cerintele task-ului.
+
+Task9 - Eliberez structurile Player si Game. Output-urile primelor task-uri
+au fost deja eliberate de checker.
