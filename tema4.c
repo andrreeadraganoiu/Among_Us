@@ -247,9 +247,9 @@ void *KillPlayer(void *input)
 		Player *Crewmate = newGame->crewmates[i];
 		distance = distance_calculator(Crewmate, impostor_location);
 
-		if ((distance < min && Crewmate->alive == 1) || (Killed->alive == 0))  //calculez distanta fiecarui jucator si o compar cu minimul gasit pana in prezent
-		{																		//ultima conditie este pentru task8, daca primul jucator(initializat cu distanta min) este omorat
-			Killed = Crewmate;													//Killed preia pentru moment primul jucator alive 
+		if ((distance < min && Crewmate->alive == 1) || (Killed->alive == 0)) //calculez distanta fiecarui jucator si o compar cu minimul gasit pana in prezent
+		{			                          //ultima conditie este pentru task8, daca primul jucator(initializat cu distanta min) este omorat
+			Killed = Crewmate;								//Killed preia pentru moment primul jucator alive 
 			min = distance;
 		}
 		else
@@ -264,7 +264,8 @@ void *KillPlayer(void *input)
 
 	}
 	char *output = calloc(MAX_LEN_STR_OUT, sizeof(char));
-	if(min > newGame->killRange || (Killed->alive == 0)) //daca distanta cea mai mica a unui jucator de impostor este mai mare decat killRange impostorul nu a putut omori pe nimeni 
+	if(min > newGame->killRange || (Killed->alive == 0)) //daca distanta cea mai mica a unui jucator de impostor este mai mare decat killRange 
+							     //impostorul nu a putut omori pe nimeni 
 		sprintf(output, "Impostor %s couldn't kill anybody.\n", Impostor->name);
 	else
 	{
