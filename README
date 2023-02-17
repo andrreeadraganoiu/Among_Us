@@ -3,8 +3,8 @@ Tema4 - Among us
 
 link : https://ocw.cs.pub.ro/courses/programare/teme_2020/tema4_2020_cbd
 
-Task1 - Am folosit functia sprinf pentru a converti la string si am concatenat
-indicii matricei.
+Task1 - Am afisat elementele dorite in matrice folosind functia sprinf si 
+concatenand indicii matricei.
 
 Task2 - Am despartit elementele sirului cu strtok iar apoi am facut suma.
 
